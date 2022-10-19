@@ -2,6 +2,8 @@
   --main-bg: rgb(0, 0, 0, 0.85);
   --main-text: #fff;
   --accent-text: rgb(5, 206, 5);
+  --workout-section-bg:  rgb(0, 0, 0);
+  --accent-title: rgba(5, 206, 5, 0.69);
 }
 
 /* Global */
@@ -10,6 +12,7 @@ body {
   color: var(--main-text);
   font-family: Lato, sans-serif;
   letter-spacing: 0.03em;
+  padding-top: 90px;
 }
 h1,
 h2,
@@ -59,9 +62,21 @@ ul {
   }
 
 /* Header global */
+.fix{
+    padding-top: 90px;
+}
+.header{
+    position: fixed;
+    background: var(--main-bg);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
 .header-nav {
   display: flex;
   align-items: center;
+  min-height: 90px;
 }
 .conteiner.header-nav {
   justify-content: space-between;
@@ -105,4 +120,139 @@ ul {
   border: 0;
   border-radius: 50%;
   text-align: center;
+}
+
+/* Footer glogal */
+
+/* Main index */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.hero {
+    position: relative;
+    padding: 200px 0;
+    max-width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(
+     to right bottom,
+        rgba(5, 206, 5, 0.156),
+        rgba(13, 13, 13, 0.86)
+      ),
+      url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--main-bg);
+  }
+  .hero-title{
+    position:absolute;
+    top:32%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    font-size:100px;
+    line-height: 1.18;
+ z-index: 1;
+}
+.logo-hero{
+    color: rgb(5, 206, 5);
+}
+.title-section{
+    font-size:64px;
+    line-height: 1.16;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+.title-section-text{
+    font-size:36px;
+    line-height: 1.16;
+    font-weight: 300;
+    text-align: center;
+    color: var(--accent-text);
+    margin-bottom: 60px;
+}
+.workout-list{
+    display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.workout-item{
+    outline: var(--accent-text);
+    flex-basis: calc((100% - 75px) / 4);
+    width: 330px;
+}
+.img{
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.item-title{
+    font-size:32px;
+    line-height: 1.16;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--accent-text);
+    text-transform: uppercase;
+}
+.item-text{
+    font-size:18px;
+    line-height: 1.16;
+    font-weight: 300;
+    margin-top: 15px;
+}
+.team-item{
+    flex-basis: calc((100% - 50px) / 3);
+    width: 330px;
+}
+.pro{
+    color: rgb(255, 31, 31);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.begginers{
+    color: rgb(80, 254, 80);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.kid{
+    color: rgb(255, 225, 0);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.schedule-list{
+    display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.schedule-item{
+    /* flex-basis: calc((100% - 100px) / 3); */
+    width: 330px;
+}
+.schedule-title{
+    font-size:32px;
+    line-height: 1.16;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--accent-text);
+    text-transform: uppercase;
+}
+.description{
+    font-size:18px;
+    line-height: 1.16;
+    font-weight: 300;
+    margin-bottom: 15px;
+
+}
+.exmpl{
+    display: flex;
+    justify-content: center;
 }
