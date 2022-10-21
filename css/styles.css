@@ -13,6 +13,7 @@ body {
   font-family: Lato, sans-serif;
   letter-spacing: 0.03em;
   padding-top: 90px;
+  font-style: 19px;
 }
 h1,
 h2,
@@ -32,8 +33,8 @@ ul {
   text-decoration: none;
   color: inherit;
 }
-.conteiner {
-  width: 1400px;
+.container {
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -78,7 +79,7 @@ ul {
   align-items: center;
   min-height: 90px;
 }
-.conteiner.header-nav {
+.container.header-nav {
   justify-content: space-between;
 }
 .logo {
@@ -113,17 +114,87 @@ ul {
   gap: 7px;
 }
 .social-link {
-  width: 55px;
-  height: 55px;
-  padding: 20px;
-  background: #000;
+    display: block;
+  width: 45px;
+  height: 45px;
+  padding: 8px;
+  background: var(--main-bg);
   border: 0;
   border-radius: 50%;
   text-align: center;
+  fill: var(--main-text);
+
+}
+.icon-link{
+    width: 100%;
+  height: 100%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  fill:inherit;
+}
+.social-link:hover,
+.social-link:focus{
+    background:var(--main-text);
+    fill: black;
+}
+.icon{
+    fill: inherit;
 }
 
-/* Footer glogal */
+.site-nav-link{
+    position: relative;
+}
+.site-nav-link:hover::after,
+.site-nav-link:focus::after{
+    position: absolute;
+width: 100%;
+height: 4px;
+top: 80px;
+left:0;
+content: "";
+background:var(--accent-text);
+border-radius: 2px;
+}
 
+
+/* Footer glogal */
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--main-bg);
+  }
+  .footer-logo {
+    display: flex;
+    align-items: center;
+  }
+  .footer-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-size{
+    width: 220px;
+}
+.footer-social{
+    display: flex;
+    gap: 10%;
+}
+.footer-title{
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.list-address:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-text{
+    font-weight: 300;
+    font-size: 15px;
+}
+.footer-text:hover,
+.footer-text:focus{
+    color: var(--accent-text);
+}
 /* Main index */
 .section {
     padding-top: 94px;
@@ -250,9 +321,16 @@ ul {
     line-height: 1.16;
     font-weight: 300;
     margin-bottom: 15px;
-
 }
 .exmpl{
     display: flex;
     justify-content: center;
+}
+.motivation-section{
+    font-size:64px;
+    line-height: 1.16;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
 }

@@ -17,7 +17,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="conteiner header-nav">
+      <div class="container header-nav">
         <nav class="header-nav">
           <a class="logo link" href="./index.html"
             >Monkey<span class="logo-text">Gym</span></a
@@ -46,9 +46,19 @@
           </p>
 
           <ul class="list list-icon">
-            <li class="social-link"><a class="link" href="#">T</a></li>
-            <li class="social-link"><a class="link" href="#">I</a></li>
-            <li class="social-link"><a class="link" href="#">P</a></li>
+            <li class="social-link">
+              <a class="link icon-link" href="#">
+                <svg class="icon" width="34px" height="34px">
+                  <use href="./images/icons.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link"><a class="link icon-link" href="#"><svg>
+                <use href="./images/icons.svg#icon-instagram"></use>
+            </svg></a></li>
+            <li class="social-link"><a class="link icon-link" href="#"><svg>
+                <use href="./images/icons.svg#icon-phone"></use>
+            </svg></a></li>
           </ul>
         </div>
       </div>
@@ -56,242 +66,331 @@
     <main>
       <h1 class="visually-hidden">Портфоліо</h1>
       <section class="hero">
-        <div class="conteiner">
-          <h2 class="hero-title">Спортивний центр <span class="logo-hero">Monkey</span>Gym</h2>
+        <div class="container">
+          <h2 class="hero-title">
+            Спортивний центр <span class="logo-hero">Monkey</span>Gym
+          </h2>
         </div>
       </section>
       <section class="section workout">
-        <div class="conteiner">
-            
-                <h2 class="title-section">Види треннувань</h2>
-                <p class="title-section-text">Обери свій заряд бодьорості</p>
-              
-              <ul class="workout-list list">
-                <li class="workout-item">
-                  <img class="img"
-                    src="./images/calisthenics.jpg"
-                    alt="стійка на одній руці"
-                    width="270"
-                    height="180"
-                  />
-                  <h3 class="item-title">Calisthenics</h3>
-                  <p class="item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                </li>
-                <li class="workout-item">
-                  <img class="img"
-                    src="./images/functional.jpg"
-                    alt="вправа книжка"
-                    width="270"
-                    height="180"
-                  />
-                  <h3 class="item-title">Functional</h3>
-                  <p class="item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                </li>
-                <li class="workout-item">
-                  <img class="img"
-                    src="./images/kikboxing.jpg"
-                    alt="спарінг"
-                    width="270"
-                    height="180"
-                  />
-                  <h3 class="item-title">Kikboxing</h3>
-                  <p class="item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                </li>
-                <li class="workout-item">
-                  <img class="img"
-                    src="./images/box.jpg"
-                    alt="Мухамед Алі"
-                    width="270"
-                    height="180"
-                  />
-                  <h3 class="item-title">Box</h3>
-                  <p class="item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                </li>
-                <li class="workout-item">
-                  <img class="img"
-                    src="./images/fitness.jpg"
-                    alt=" вправа з мʼячем"
-                    width="270"
-                    height="180"
-                  />
-                  <h3 class="item-title">Fitness</h3>
-                  <p class="item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                </li>
-                <li class="workout-item">
-                  <img class="img"
-                    src="./images/stretching.jpg"
-                    alt=" дівчина розтягується"
-                    width="270"
-                    height="180"
-                    style="object-fit: cover"
-                  />
-                  <h3 class="item-title">Stretching</h3>
-                  <p class="item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                </li>
-                <li class="workout-item">
-                  <img class="img"
-                    src="./images/weightlifting.jpg"
-                    alt="підйом штанги"
-                    width="270"
-                    height="180"
-                  />
-                  <h3 class="item-title">Weightlifting</h3>
-                  <p class="item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                </li>
-                <li class="workout-item">
-                  <img class="img"
-                    src="./images/yoga.jpg"
-                    alt="групове заняття"
-                    width="270"
-                    height="180"
-                  />
-                  <h3 class="item-title">Yoga</h3>
-                  <p class="item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                </li>
-              </ul>
+        <div class="container">
+          <h2 class="title-section">Види треннувань</h2>
+          <p class="title-section-text">Обери свій заряд бодьорості</p>
+
+          <ul class="workout-list list">
+            <li class="workout-item">
+              <img
+                class="img"
+                src="./images/calisthenics.jpg"
+                alt="стійка на одній руці"
+                width="270"
+                height="180"
+              />
+              <h3 class="item-title">Calisthenics</h3>
+              <p class="item-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+            </li>
+            <li class="workout-item">
+              <img
+                class="img"
+                src="./images/functional.jpg"
+                alt="вправа книжка"
+                width="270"
+                height="180"
+              />
+              <h3 class="item-title">Functional</h3>
+              <p class="item-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+            </li>
+            <li class="workout-item">
+              <img
+                class="img"
+                src="./images/kikboxing.jpg"
+                alt="спарінг"
+                width="270"
+                height="180"
+              />
+              <h3 class="item-title">Kikboxing</h3>
+              <p class="item-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+            </li>
+            <li class="workout-item">
+              <img
+                class="img"
+                src="./images/box.jpg"
+                alt="Мухамед Алі"
+                width="270"
+                height="180"
+              />
+              <h3 class="item-title">Box</h3>
+              <p class="item-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+            </li>
+            <li class="workout-item">
+              <img
+                class="img"
+                src="./images/fitness.jpg"
+                alt=" вправа з мʼячем"
+                width="270"
+                height="180"
+              />
+              <h3 class="item-title">Fitness</h3>
+              <p class="item-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+            </li>
+            <li class="workout-item">
+              <img
+                class="img"
+                src="./images/stretching.jpg"
+                alt=" дівчина розтягується"
+                width="270"
+                height="180"
+                style="object-fit: cover"
+              />
+              <h3 class="item-title">Stretching</h3>
+              <p class="item-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+            </li>
+            <li class="workout-item">
+              <img
+                class="img"
+                src="./images/weightlifting.jpg"
+                alt="підйом штанги"
+                width="270"
+                height="180"
+              />
+              <h3 class="item-title">Weightlifting</h3>
+              <p class="item-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+            </li>
+            <li class="workout-item">
+              <img
+                class="img"
+                src="./images/yoga.jpg"
+                alt="групове заняття"
+                width="270"
+                height="180"
+              />
+              <h3 class="item-title">Yoga</h3>
+              <p class="item-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="section team">
-        <div class="conteiner">
+        <div class="container">
           <h2 class="title-section">Наша команда</h2>
-          <p class="title-section-text">Обери собі тренера, не будь голодранцем</p>
-        
-        <ul class="workout-list list">
-          <li class="team-item">
-            <img  class="img"
-              src="./images/box.jpg"
-              alt="Мухамед Алі"
-              width="270"
-              height="180"
-            />
-            <h3 class="item-title">Мухамед Алі</h3>
-            <p class="item-text">Кращій боксер свого покоління, легенда в світі боксу</p>
-          </li>
-          <li class="team-item">
-            <img class="img"
-              src="./images/box.jpg"
-              alt="Мухамед Алі"
-              width="270"
-              height="180"
-            />
-            <h3 class="item-title">Мухамед Алі</h3>
-            <p class="item-text">Кращій боксер свого покоління, легенда в світі боксу</p>
-          </li>
-          <li class="team-item">
-            <img class="img"
-              src="./images/box.jpg"
-              alt="Мухамед Алі"
-              width="270"
-              height="180"
-            />
-            <h3 class="item-title">Мухамед Алі</h3>
-            <p class="item-text">Кращій боксер свого покоління, легенда в світі боксу</p>
-          </li>
-        </ul></div>
+          <p class="title-section-text">
+            Обери собі тренера, не будь голодранцем
+          </p>
+
+          <ul class="workout-list list">
+            <li class="team-item">
+              <img
+                class="img"
+                src="./images/box.jpg"
+                alt="Мухамед Алі"
+                width="270"
+                height="180"
+              />
+              <h3 class="item-title">Мухамед Алі</h3>
+              <p class="item-text">
+                Кращій боксер свого покоління, легенда в світі боксу
+              </p>
+            </li>
+            <li class="team-item">
+              <img
+                class="img"
+                src="./images/box.jpg"
+                alt="Мухамед Алі"
+                width="270"
+                height="180"
+              />
+              <h3 class="item-title">Мухамед Алі</h3>
+              <p class="item-text">
+                Кращій боксер свого покоління, легенда в світі боксу
+              </p>
+            </li>
+            <li class="team-item">
+              <img
+                class="img"
+                src="./images/box.jpg"
+                alt="Мухамед Алі"
+                width="270"
+                height="180"
+              />
+              <h3 class="item-title">Мухамед Алі</h3>
+              <p class="item-text">
+                Кращій боксер свого покоління, легенда в світі боксу
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="section schedule">
-        <div class="conteiner">
+        <div class="container">
           <h2 class="title-section">Розклад зайнять</h2>
-          <p class="title-section-text">Долучайся до спорту у вдалий для тебе час</p>
-        
-        <ul class="schedule-list list">
-          <li class="schedule-item">
-            <h3 class="schedule-title">Пн/Ср/Пт</h3>
-           <div class="exmpl"> <ul class="list ">
-              <li class="description">8:00 MonkeyFunctional</li>
-              <li class="description">18:00 MonkeyFunctional <span class="pro">Pro</span></li>
-              <li class="description">19:00 MonkeyFunctional <span class="begginers">Beginners</span></li>
-            </ul></div>
-          </li>
-          <li class="schedule-item">
-            <h3 class="schedule-title">Вт/Чт</h3>
-            <div class="exmpl"><ul class="list ">
-              <li class="description">8:00 Yoga Ashtanga</li>
-              <li class="description">9:00 Boxing</li>
-              <li class="description">10:00 Kickboxing</li>
-              <li class="description">16:00 MonkeyFunctional <span class="kid">Kids</span></li>
-              <li class="description">18:00 Fitness Mix</li>
-              <li class="description">18:30 MonkeyFunctional</li>
-              <li class="description">19:00 Stretching</li>
-              <li class="description">19:30 Weightlifting</li>
-            </ul></div>
-          </li>
-          <li class="schedule-item">
-            <h3 class="schedule-title">Сб</h3>
-            <div class="exmpl"><ul class="list ">
-              <li class="description">10:00 Weightlifting</li>
-              <li class="description">11:00 MonkeyFunctional</li>
-              <li class="description">14:00 Calisthenics</li>
-              <li class="description">15:00 Boxing</li>
-              <li class="description">16:00 Kickboxing</li>
-              <li class="description">17:30 MonkeyFunctional <span class="kid">Kids</span></li>
-            </ul></div>
-          </li>
-        </ul></div>
+          <p class="title-section-text">
+            Долучайся до спорту у вдалий для тебе час
+          </p>
+
+          <ul class="schedule-list list">
+            <li class="schedule-item">
+              <h3 class="schedule-title">Пн/Ср/Пт</h3>
+              <div class="exmpl">
+                <ul class="list">
+                  <li class="description">8:00 MonkeyFunctional</li>
+                  <li class="description">
+                    18:00 MonkeyFunctional <span class="pro">Pro</span>
+                  </li>
+                  <li class="description">
+                    19:00 MonkeyFunctional
+                    <span class="begginers">Beginners</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="schedule-item">
+              <h3 class="schedule-title">Вт/Чт</h3>
+              <div class="exmpl">
+                <ul class="list">
+                  <li class="description">8:00 Yoga Ashtanga</li>
+                  <li class="description">9:00 Boxing</li>
+                  <li class="description">10:00 Kickboxing</li>
+                  <li class="description">
+                    16:00 MonkeyFunctional <span class="kid">Kids</span>
+                  </li>
+                  <li class="description">18:00 Fitness Mix</li>
+                  <li class="description">18:30 MonkeyFunctional</li>
+                  <li class="description">19:00 Stretching</li>
+                  <li class="description">19:30 Weightlifting</li>
+                </ul>
+              </div>
+            </li>
+            <li class="schedule-item">
+              <h3 class="schedule-title">Сб</h3>
+              <div class="exmpl">
+                <ul class="list">
+                  <li class="description">10:00 Weightlifting</li>
+                  <li class="description">11:00 MonkeyFunctional</li>
+                  <li class="description">14:00 Calisthenics</li>
+                  <li class="description">15:00 Boxing</li>
+                  <li class="description">16:00 Kickboxing</li>
+                  <li class="description">
+                    17:30 MonkeyFunctional <span class="kid">Kids</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="section ticket">
         <h2 class="title-section">Ціни</h2>
-        <p class="title-section-text">Lorem ipsum dolor sit amet consectetur </p>
-        <ul class="workout-list list">
+        <p class="title-section-text">Lorem ipsum dolor sit amet consectetur</p>
+        <ul class="schedule-list list">
           <li>
             <h3 class="schedule-title">Абонементи</h3>
-            <ul>
-              <li>1 місяць - 1000 грн</li>
-              <li>3 місяці - 2650 грн</li>
-              <li>6 місяців - 4620 грн</li>
-              <li>12 місяців - 7920 грн</li>
-            </ul>
+            <div class="exmpl">
+              <ul class="list">
+                <li class="description">1 місяць - 1000 грн</li>
+                <li class="description">3 місяці - 2650 грн</li>
+                <li class="description">6 місяців - 4620 грн</li>
+                <li class="description">12 місяців - 7920 грн</li>
+              </ul>
+            </div>
           </li>
           <li>
             <h3 class="schedule-title">Персональні заняття</h3>
-            <ul>
-              <li>Разове відвідування - 550/600 грн</li>
-              <li>Блок з 10 занять - 5500/6000 грн +1 у подарунок</li>
-            </ul>
+            <div class="exmpl">
+              <ul class="list">
+                <li class="description">Разове відвідування - 550/600 грн</li>
+                <li class="description">
+                  Блок з 10 занять - 5500/6000 грн +1 у подарунок
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
             <h3 class="schedule-title">Групові заняття</h3>
-            <ul>
-              <li>Разове відвідування - 200 грн</li>
-              <li>Блок з 10 занять - 2000 грн +1 у подарунок</li>
-            </ul>
+            <div class="exmpl">
+              <ul class="list">
+                <li class="description">Разове відвідування - 200 грн</li>
+                <li class="description">
+                  Блок з 10 занять - 2000 грн +1 у подарунок
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </section>
       <section class="section">
-        <h2>Наважився? Тоді чекаємо на тебе!</h2>
+        <h2 class="motivation-section">
+          Наважився? <br />
+          Тоді чекаємо <br />
+          на тебе!
+        </h2>
       </section>
     </main>
-    <footer>
-      <div>
-        <a class="logo link" href="./index.html"
-          >Monkey<span class="logo-text">Gym</span></a
-        >
-      </div>
-      <div>
-        <h3>Приходь</h3>
-        <address>
-          <ul>
-            <li>
-              <a href="https://goo.gl/maps/UzH1uUtEQaYp1MYp8"
-                >м.Киев, вул. Євгена Коновальца, 32Б
+    <footer class="footer">
+      <div class="container footer-nav">
+        <div class="footer-logo">
+          <a class="logo link" href="./index.html"
+            >Monkey<span class="logo-text">Gym</span></a
+          >
+        </div>
+        <div class="footer-social">
+          <div class="footer-size">
+            <h3 class="footer-title">Приходь</h3>
+            <address>
+              <ul class="list">
+                <li class="list-address">
+                  <a
+                    class="link footer-text"
+                    href="https://goo.gl/maps/UzH1uUtEQaYp1MYp8"
+                    >м.Киев, вул. Євгена Коновальца, 32Б
+                  </a>
+                </li>
+                <li class="list-address">
+                  <a class="link footer-text" href="tel:+380983560137"
+                    >+38 098 356 01 37</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div>
+            <h3 class="footer-title">Дзвони/Пиши</h3>
+            <p class="header-text">
+              Пн-Пт 7:00-22:00 <span>Сб-Нд 8:00-21:00</span>
+            </p>
+          </div>
+          <ul class="list list-icon footer-logo">
+            <li class="social-link">
+              <a class="link icon-link" href="#">
+                <svg class="icon" width="34px" height="34px">
+                  <use href="./images/icons.svg#icon-telegram"></use>
+                </svg>
               </a>
             </li>
-            <li>
-              <a href="tel:+380983560137">+38 098 356 01 37</a>
-            </li>
+            <li class="social-link"><a class="link icon-link" href="#"><svg>
+                <use href="./images/icons.svg#icon-instagram"></use>
+            </svg></a></li>
+            <li class="social-link"><a class="link icon-link" href="#"><svg>
+                <use href="./images/icons.svg#icon-phone"></use>
+            </svg></a></li>
           </ul>
-        </address>
-        <div><h3>Дзвони/Пиши</h3>
-            <p class="header-text">
-                Пн-Пт 7:00-22:00 <span>Сб-Нд 8:00-21:00</span>
-              </p>
-              <ul class="list list-icon">
-                <li class="social-link"><a class="link" href="#">T</a></li>
-                <li class="social-link"><a class="link" href="#">I</a></li>
-                <li class="social-link"><a class="link" href="#">P</a></li>
-              </ul>
-            </div>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
