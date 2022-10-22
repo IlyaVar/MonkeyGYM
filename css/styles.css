@@ -221,7 +221,7 @@ border-radius: 2px;
   .hero-title{
     position:absolute;
     top:32%;
-    left: 78%;
+    left: 73%;
     transform: translate(-50%, -50%);
     font-size:100px;
     line-height: 1.18;
@@ -326,11 +326,13 @@ border-radius: 2px;
     display: flex;
     justify-content: center;
 }
-.motivation-section{
+.motivation-text{
     font-size:64px;
     line-height: 1.16;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 35%;
 }
